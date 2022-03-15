@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+p {
+  margin: 10px 0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  opacity: 0.8;
+  color: #fff;
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar .logo {
+  font-weight: 400;
+}
+.navbar ul a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+.navbar ul a:hover {
+  border-bottom: 2px solid #28a745;
+}
+/* Main Content */
+.hero {
+  background: url('../images/home/showcase.jpg') no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+  position: relative;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.hero * {
+  z-index: 10;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+}
+.content h1 {
+  font-size: 55px;
+}
+.content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0 30px;
+}
+/* About Section */
+.icons {
+  padding: 30px;
+}
+.icons i {
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.icons h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+/* Solutions Section */
+#solutions {
+  width: 100%;
+  height: 614.02px;
+
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card .image {
+  width: 50%;
+  height: 100%;
+}
+.card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .cont {
+  width: 50%;
+  padding: 30px;
+  align-self: stretch;
+}
+.card .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+}
+.card .text h4 {
+  margin-bottom: 10px;
+}
+.card .text h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+.card .text p {
+  margin: 20px 0;
+}
+.card .text a {
+  width: fit-content;
+}
+/* Cases Section */
+#cases img:hover {
+  opacity: 0.7;
+}
+/* blog */
+#blog {
+  height: 614.02px;
+}
+/* Team Section */
+#team img {
+  border-radius: 50%;
+}
+/* Contact Form */
+.contact-form {
+  width: 100%;
+  padding: 20px 0;
+}
+.contact-img {
+  display: flex;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+.contact-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form input:focus {
+  outline-color: #28a745;
+}
+.contact-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+.contact-content h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #28a745;
+}
+.footer .social {
+  display: flex;
+  justify-content: space-between;
+  width: 229px;
+}
+/* media query */
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+  }
+  .navbar .logo {
+    margin-bottom: 10px;
+  
+  }
+  .navbar ul a {
+    padding: 10px 10px;
+  }
+  /* Main Content */
+  .content h1 {
+    font-size: 35px;
+  }
+  .content p {
+    font-size: 16px;
+  }
+
+  /* About Section */
+  .flex-items {
+    flex-direction: column;
+  }
+  #solutions {
+    height: auto;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card .cont {
+    width: 100%;
+  }
+  .card .image {
+    width: 100%;
+    display: flex;
+  }
+  .flex-grid .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 90%;
+  }
+  #blog {
+    height: auto;
+  }
+  #team img {
+    width: 70%;
+  }
+}
