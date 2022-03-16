@@ -178,8 +178,10 @@ img {
   width: 100%;
   padding: 20px 0;
 }
-.contact-img {
+.card .contact-img {
   display: flex;
+  align-self: stretch;
+  height: auto;
 }
 .contact-form label {
   display: block;
