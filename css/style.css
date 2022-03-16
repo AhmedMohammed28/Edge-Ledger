@@ -81,7 +81,7 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.hero * {
+.hero *:not(.navbar) {
   z-index: 10;
 }
 .content {
