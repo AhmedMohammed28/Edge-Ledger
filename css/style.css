@@ -94,6 +94,25 @@ img {
 }
 .content h1 {
   font-size: 55px;
+  width: 30.125rem;
+  animation: typewriter 10s steps(17) 1s infinite normal both,
+  blinkTextCursor 500ms steps(44) infinite normal;
+  text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255,255,255,.75);
+}
+@keyframes typewriter{
+  0% {width: 0;}
+  25%{width: 15rem;}
+  50%{width: 30rem;}
+  75%{width: 15rem;}
+  100% {width: 0rem}
+  
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
 .content p {
   font-size: 23px;
@@ -254,6 +273,16 @@ img {
   /* Main Content */
   .content h1 {
     font-size: 35px;
+    width: 19.279375rem;
+    animation: typewriter 10s steps(17) 1s infinite normal both, blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    0% {width: 0;}
+    25%{width: 9.6396875rem;}
+    50%{width: 19.279375rem;}
+    75%{width: 9.6396875rem;}
+    100% {width: 0rem}
+    
   }
   .content p {
     font-size: 16px;
